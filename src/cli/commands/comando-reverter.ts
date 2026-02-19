@@ -4,6 +4,7 @@ import { ExitCode, sair } from '@cli/helpers/exit-codes.js';
 import { CliComandoReverterMensagens } from '@core/messages/cli/cli-comando-reverter-messages.js';
 import { ICONES_DIAGNOSTICO, log, logAuto, logSistema } from '@core/messages/index.js';
 import { Command } from 'commander';
+
 export function registrarComandoReverter(program: Command): void {
   program.command('reverter').description('Gerencia mapa de reversão para moves aplicados').hook('preAction', async () => {
     if (process.env.SENSEI_TEST_FAST === '1') {

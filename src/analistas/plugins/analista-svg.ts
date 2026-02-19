@@ -1,8 +1,10 @@
 // SPDX-License-Identifier: MIT
 import { AnalystOrigens, AnalystTipos, SeverityNiveis, SvgMensagens } from '@core/messages/core/plugin-messages.js';
 import { otimizarSvgLikeSvgo, shouldSugerirOtimizacaoSvg } from '@shared/impar/svgs.js';
+
 import type { Ocorrencia } from '@';
 import { criarAnalista, criarOcorrencia } from '@';
+
 const disableEnv = process.env.SENSEI_DISABLE_PLUGIN_SVG === '1';
 type Msg = ReturnType<typeof criarOcorrencia>;
 function findLine(src: string, index = 0): number {

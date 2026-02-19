@@ -1,7 +1,9 @@
 // SPDX-License-Identifier: MIT
 import { AnalystOrigens, AnalystTipos, SeverityNiveis, TailwindMensagens } from '@core/messages/core/plugin-messages.js';
 import { createLineLookup } from '@shared/helpers/line-lookup.js';
+
 import { criarAnalista, criarOcorrencia } from '@';
+
 const disableEnv = process.env.SENSEI_DISABLE_PLUGIN_TAILWIND === '1';
 type Msg = ReturnType<typeof criarOcorrencia>;
 type ClassBlock = {

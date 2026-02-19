@@ -8,7 +8,9 @@ import { CABECALHOS, log } from '@core/messages/index.js';
 import { ativarModoJson } from '@shared/helpers/json-mode.js';
 import { Command } from 'commander';
 import ora from 'ora';
+
 import type { ParentWithOpts } from '@';
+
 export function comandoDiagnosticar(aplicarFlagsGlobais: (opts: Record<string, unknown>) => void): Command {
   const cmd = new Command('diagnosticar').alias('diag').description('Executa uma análise completa do repositório');
 

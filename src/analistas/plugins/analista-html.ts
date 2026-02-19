@@ -4,7 +4,9 @@ import { createLineLookup } from '@shared/helpers/line-lookup.js';
 import { maskHtmlComments, maskTagBlocks } from '@shared/helpers/masking.js';
 import type { AnyNode, Document, Element, Text } from 'domhandler';
 import { parseDocument } from 'htmlparser2';
+
 import { criarAnalista, criarOcorrencia } from '@';
+
 const disableEnv = process.env.SENSEI_DISABLE_PLUGIN_HTML === '1';
 type Msg = ReturnType<typeof criarOcorrencia>;
 function warn(message: string, relPath: string, line?: number): Msg {

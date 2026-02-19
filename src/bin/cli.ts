@@ -2,6 +2,7 @@
 // SPDX-License-Identifier: MIT
 import { dirname, join } from 'node:path';
 import { fileURLToPath } from 'node:url';
+
 import { registrarComandos } from '@cli/comandos.js';
 import { comandoPerf } from '@cli/commands/index.js';
 import { ExitCode, sair } from '@cli/helpers/exit-codes.js';
@@ -15,7 +16,7 @@ import type { CommanderError } from 'commander';
 import { Command } from 'commander';
 
 // 🌐 Flags globais aplicáveis em todos os comandos
-import type { SenseiGlobalFlags, ErrorLike } from '@';
+import type { ErrorLike,SenseiGlobalFlags } from '@';
 import { extrairMensagemErro } from '@';
 
 // caminho do módulo (usado para localizar arquivos de configuração)

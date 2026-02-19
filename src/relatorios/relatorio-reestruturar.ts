@@ -1,7 +1,9 @@
 // SPDX-License-Identifier: MIT
 import { RelatorioMensagens } from '@core/messages/index.js';
 import { salvarEstado } from '@shared/persistence/persistencia.js';
+
 import type { MovimentoEstrutural, OpcoesRelatorioReestruturar } from '@';
+
 export async function gerarRelatorioReestruturarMarkdown(caminho: string, movimentos: MovimentoEstrutural[], opcoes?: OpcoesRelatorioReestruturar): Promise<void> {
   const dataISO = new Date().toISOString();
   const total = movimentos.length;

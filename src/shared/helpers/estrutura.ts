@@ -2,7 +2,9 @@
 // @sensei-disable tipo-literal-inline-complexo
 // Justificativa: tipos locais para helpers de estrutura
 import path from 'node:path';
+
 import { lerEstado } from '@shared/persistence/persistencia.js';
+
 import type { NomeacaoEstilo, OpcoesEstrategista, ParseNomeResultado } from '@';
 
 // Re-exporta os tipos para compatibilidade

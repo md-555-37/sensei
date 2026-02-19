@@ -5,6 +5,7 @@
 // Agrupa problemas similares e prioriza por impacto para evitar sobrecarga de informação
 
 import { AGRUPAMENTOS_MENSAGEM, PRIORIDADES, RelatorioMensagens } from '@core/messages/index.js';
+
 import type { Ocorrencia, OcorrenciaNivel, ProblemaAgrupado, RelatorioResumo } from '@';
 
 /**

@@ -1,6 +1,7 @@
 // SPDX-License-Identifier: MIT
 import fs from 'node:fs';
 import path from 'node:path';
+
 import { detectarArquetipos } from '@analistas/detectores/detector-arquetipos.js';
 import { normalizarOcorrenciaParaJson } from '@cli/diagnostico/normalizar-ocorrencias-json.js';
 import { exibirBlocoFiltros, listarAnalistas } from '@cli/processing/display.js';

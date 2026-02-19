@@ -7,8 +7,10 @@ import * as t from '@babel/types';
 import { traverse } from '@core/config/traverse.js';
 import { ComandosCliMensagens } from '@core/messages/analistas/analista-comandos-cli-messages.js';
 import { detectarContextoProjeto, isRelevanteParaAnalise } from '@shared/contexto-projeto.js';
+
 import type { ComandoRegistro, ContextoExecucao, HandlerInfo, Ocorrencia, TecnicaAplicarResultado } from '@';
 import { isBabelNode } from '@';
+
 type BabelNode = Node;
 export function extractHandlerInfo(node: Node | unknown): HandlerInfo | null {
   if (!node || !isBabelNode(node)) return null;

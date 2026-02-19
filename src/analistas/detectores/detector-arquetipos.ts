@@ -1,6 +1,7 @@
 // SPDX-License-Identifier: MIT
 // Nota: manter ARQUETIPOS importado visível como lembrete para integração futura
 import path from 'node:path';
+
 import { extrairSinaisAvancados } from '@analistas/arquitetos/sinais-projeto-avancados.js';
 import { ARQUETIPOS } from '@analistas/estrategistas/arquetipos-defs.js';
 import { OperarioEstrutura } from '@analistas/estrategistas/operario-estrutura.js';
@@ -8,7 +9,9 @@ import { carregarArquetipoPersonalizado, integrarArquetipos, obterArquetipoOfici
 import { scoreArquetipoAvancado } from '@analistas/pontuadores/pontuador.js';
 import { config } from '@core/config/config.js';
 import { lerEstado, salvarEstado } from '@shared/persistence/persistencia.js';
+
 import type { ArquetipoDrift, ArquetipoEstruturaDef, ArquetipoPersonalizado, ContextoExecucao, PackageJson, ResultadoContexto, ResultadoDeteccaoArquetipo, SinaisProjetoAvancados, SnapshotEstruturaBaseline } from '@';
+
 function scoreArquetipo(def: ArquetipoEstruturaDef, arquivos: string[], _sinaisAvancados: SinaisProjetoAvancados): ResultadoDeteccaoArquetipo {
   // Implementação simplificada temporária.
   // Mantemos a assinatura e a forma do retorno para compatibilidade.

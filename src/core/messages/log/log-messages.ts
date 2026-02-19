@@ -5,6 +5,7 @@
  */
 
 import { ICONES_ACAO, ICONES_ARQUIVO, ICONES_COMANDO, ICONES_DIAGNOSTICO, ICONES_FEEDBACK, ICONES_NIVEL, ICONES_RELATORIO, ICONES_STATUS } from '../ui/icons.js';
+
 export const LogMensagens = {
   sistema: {
     inicializacao: {

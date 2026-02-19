@@ -1,15 +1,15 @@
 // SPDX-License-Identifier: MIT
 
-import * as fs from 'fs';
-import * as path from 'path';
+import generateModule from '@babel/generator';
 import { parse } from '@babel/parser';
 import traverseModule from '@babel/traverse';
-import generateModule from '@babel/generator';
-import { Command } from 'commander';
-import chalk from '@core/config/chalk-safe.js';
-import { log } from '@core/messages/index.js';
-import { config } from '@core/config/config.js';
 import { ExitCode, sair } from '@cli/helpers/exit-codes.js';
+import chalk from '@core/config/chalk-safe.js';
+import { config } from '@core/config/config.js';
+import { log } from '@core/messages/index.js';
+import { Command } from 'commander';
+import * as fs from 'fs';
+import * as path from 'path';
 
 // @ts-ignore
 const traverse = traverseModule.default || traverseModule;

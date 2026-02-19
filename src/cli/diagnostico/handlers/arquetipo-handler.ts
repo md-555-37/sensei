@@ -14,6 +14,7 @@ import { config } from '@core/config/config.js';
 import { CliArquetipoHandlerMensagens } from '@core/messages/cli/cli-arquetipo-handler-messages.js';
 import { MENSAGENS_ARQUETIPOS } from '@core/messages/core/diagnostico-messages.js';
 import { log } from '@core/messages/index.js';
+
 import type { ArquetipoOptions, ArquetipoResult, FileEntryWithAst } from '@';
 
 // Re-export para compatibilidade

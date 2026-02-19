@@ -6,6 +6,7 @@
  */
 
 import { ICONES_ACAO, ICONES_COMANDO, ICONES_DIAGNOSTICO, ICONES_RELATORIO } from '../ui/icons.js';
+
 export const RelatorioMensagens = {
   /* -------------------------- RELATÓRIO PRINCIPAL (gerador-relatorio.ts) -------------------------- */
   principal: {

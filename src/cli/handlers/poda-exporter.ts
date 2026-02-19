@@ -6,10 +6,12 @@
 
 import { promises as fs } from 'node:fs';
 import path from 'node:path';
+
 import { config } from '@core/config/config.js';
 import { CliExportersMensagens } from '@core/messages/cli/cli-exporters-messages.js';
 import { log } from '@core/messages/index.js';
 import { gerarRelatorioPodaJson, gerarRelatorioPodaMarkdown } from '@relatorios/relatorio-poda.js';
+
 import type { PodaExportOptions, PodaExportResult } from '@';
 
 // Re-export para compatibilidade

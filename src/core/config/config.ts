@@ -1,8 +1,11 @@
 // SPDX-License-Identifier: MIT
 import path from 'node:path';
+
 import { lerArquivoTexto } from '@shared/persistence/persistencia.js';
+
 import type { IncludeExcludeConfig } from '@';
-import { SENSEI_DIRS, SENSEI_ARQUIVOS } from '../registry/paths.js';
+
+import { SENSEI_ARQUIVOS,SENSEI_DIRS } from '../registry/paths.js';
 
 // Diretórios internos do Sensei (agora usando paths centralizados)
 const SENSEI_ESTADO = SENSEI_DIRS.STATE;

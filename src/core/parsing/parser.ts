@@ -11,6 +11,7 @@ import { XMLParser } from 'fast-xml-parser';
 // Parsers externos leves para outras linguagens
 import { parseDocument } from 'htmlparser2';
 import { createRequire } from 'module';
+
 import type { DecifrarSintaxeOpts, ParserBabelFileExtra as BabelFileExtra, ParserFunc, ParserOptions as PluginParserOptions, ParserRawAst } from '@';
 
 // Contexto global para o arquivo atual durante parsing

@@ -1,5 +1,6 @@
 import { promises as fs } from 'node:fs';
 import path from 'node:path';
+
 export function guessLang(block: string): string {
   const head = block.slice(0, 200).trim();
   if (/^\{[\s\S]*\}$/.test(head)) return 'json';

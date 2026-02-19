@@ -3,6 +3,7 @@
 // Bootstrap do binário: registra o loader ESM programaticamente e importa ./cli.js
 import path from 'node:path';
 import { fileURLToPath, pathToFileURL } from 'node:url';
+
 import type { ErrorLike } from '@';
 import { extrairMensagemErro } from '@';
 

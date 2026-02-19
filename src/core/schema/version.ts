@@ -7,6 +7,7 @@
  */
 
 import { ExcecoesMensagens } from '@core/messages/core/excecoes-messages.js';
+
 import type { RelatorioComVersao, SchemaMetadata } from '@';
 
 // Re-exporta os tipos para compatibilidade

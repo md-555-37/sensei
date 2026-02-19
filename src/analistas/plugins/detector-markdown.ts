@@ -14,9 +14,12 @@
  */
 
 import { promises as fs } from 'node:fs';
+
 import { config } from '@core/config/config.js';
 import { log } from '@core/messages/index.js';
+
 import type { Ocorrencia } from '@';
+
 import type { MarkdownAnaliseArquivo, MarkdownDetectorOptions, MarkdownLicensePatterns, MarkdownProblema, MarkdownWhitelistConfig } from '../../types/analistas/markdown.js';
 
 /**

@@ -5,7 +5,9 @@
  */
 
 import { formatMs } from '@core/config/format.js';
+
 import type { GuardianInfo, MetadadosRelatorioEstendido, ProblemaAgrupado } from '@';
+
 import { RelatorioMensagens } from './relatorio-messages.js';
 
 // Re-exporta o tipo para compatibilidade

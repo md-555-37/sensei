@@ -1,10 +1,11 @@
 // SPDX-License-Identifier: MIT
 import { mkdir, readFile, writeFile } from 'node:fs/promises';
 import { dirname, join } from 'node:path';
-import type { SenseiContextState, SenseiRunRecord, MemoryMessage } from '@';
+
+import type { MemoryMessage,SenseiContextState, SenseiRunRecord } from '@';
 
 // Re-exporta para compatibilidade com código existente
-export type { SenseiContextState, SenseiRunRecord, MemoryMessage };
+export type { MemoryMessage,SenseiContextState, SenseiRunRecord };
 export class ConversationMemory {
   private history: MemoryMessage[] = [];
   constructor(private maxHistory = 10, private persistCaminho?: string) {}

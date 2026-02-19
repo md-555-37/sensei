@@ -1,7 +1,9 @@
 // SPDX-License-Identifier: MIT
 
 import path from 'node:path';
+
 import { otimizarSvgLikeSvgo, shouldSugerirOtimizacaoSvg } from '@shared/impar/svgs.js';
+
 import type { FileEntryWithAst } from '@';
 
 /**

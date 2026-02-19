@@ -7,6 +7,7 @@
  */
 
 import type { InferredInterface, PropertyUsage, TypeAnalysis, UsagePattern } from '@';
+
 import { toKebabCase } from './context-analyzer.js';
 
 /**

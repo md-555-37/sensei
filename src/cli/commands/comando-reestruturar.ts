@@ -13,6 +13,7 @@ import { CliComandoReestruturarMensagens } from '@core/messages/cli/cli-comando-
 import { CABECALHOS, log } from '@core/messages/index.js';
 import { Command } from 'commander';
 import ora from 'ora';
+
 import type { FileEntry, FileEntryWithAst, Ocorrencia, ResultadoInquisicao } from '@';
 import { extrairMensagemErro } from '@';
 

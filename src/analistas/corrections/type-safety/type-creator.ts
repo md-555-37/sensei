@@ -6,8 +6,11 @@
 
 import { promises as fs } from 'node:fs';
 import path from 'node:path';
+
 import { buildTypesFsPath } from '@core/config/conventions.js';
+
 import type { ExistingType, TypeAnalysis } from '@';
+
 import { toKebabCase } from './context-analyzer.js';
 
 /**

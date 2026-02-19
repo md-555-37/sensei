@@ -6,6 +6,7 @@
  * Não toca disco; apenas retorna o novo conteúdo.
  */
 import path from 'node:path';
+
 import type { ImportReescrito } from '@';
 
 // Re-exporta o tipo para compatibilidade

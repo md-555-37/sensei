@@ -1,7 +1,9 @@
 // SPDX-License-Identifier: MIT
 
 import { otimizarSvgLikeSvgo, shouldSugerirOtimizacaoSvg } from '@shared/impar/svgs.js';
+
 import type { AutoFixConfig, PatternBasedQuickFix } from '@';
+
 import { hasMinimumConfidence, isCategoryAllowed, shouldExcludeFile } from './auto-fix-config.js';
 
 // Re-exporta os tipos para compatibilidade

@@ -5,6 +5,7 @@
  */
 
 import type { JsonComMetadados } from '@';
+
 export const JsonMensagens = {
   /* -------------------------- CAMPOS COMUNS -------------------------- */
   comum: {

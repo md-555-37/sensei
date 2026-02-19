@@ -4,8 +4,11 @@
 import { promises as fs } from 'node:fs';
 import * as fsCb from 'node:fs';
 import path from 'node:path';
+
 import { ExcecoesMensagens } from '@core/messages/core/excecoes-messages.js';
+
 import type { GlobalComVitest, SalvarBinarioFn, SalvarEstadoFn, VitestSpyWrapper } from '@';
+
 const RAIZ = process.cwd();
 const IS_TEST = (process.env.VITEST ?? '') !== '';
 function safeGet<T extends object, K extends PropertyKey>(obj: T, key: K): unknown {

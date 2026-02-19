@@ -3,8 +3,11 @@
 import fs from 'node:fs';
 import { createRequire } from 'node:module';
 import path from 'node:path';
+
 import { XMLValidator } from 'fast-xml-parser';
+
 import type { FormatadorMinimoParser, FormatadorMinimoResult } from '@';
+
 import type { FormatterFn } from './formatter-registry.js';
 import { getFormatterForPath, registerFormatter } from './formatter-registry.js';
 import { getSyntaxInfoForPath } from './syntax-map.js';

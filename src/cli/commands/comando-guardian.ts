@@ -10,8 +10,10 @@ import { CliComandoGuardianMensagens } from '@core/messages/cli/cli-comando-guar
 import { log, logGuardian } from '@core/messages/index.js';
 import { acceptNewBaseline } from '@guardian/sentinela.js';
 import { Command } from 'commander';
+
 import type { FileEntry, FileEntryWithAst } from '@';
 import { extrairMensagemErro, IntegridadeStatus } from '@';
+
 export function comandoGuardian(aplicarFlagsGlobais: (opts: Record<string, unknown>) => void): Command {
   return new Command('guardian').description('Gerencia e verifica a integridade do ambiente do Sensei.')
   // Alinhar com comportamento tolerante usado em outros comandos/testes

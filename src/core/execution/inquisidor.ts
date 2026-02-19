@@ -1,13 +1,16 @@
 // SPDX-License-Identifier: MIT
 import { promises as fs } from 'node:fs';
+
 import { config } from '@core/config/config.js';
 import { isMetaPath } from '@core/config/paths.js';
 import { InquisidorMensagens } from '@core/messages/core/inquisidor-messages.js';
 import { log } from '@core/messages/index.js';
 import { lerEstado } from '@shared/persistence/persistencia.js';
 import * as path from 'path';
+
 import type { CacheValor, EstadoIncArquivo, FileEntry, FileEntryWithAst, InquisicaoOptions, MetricasGlobais, OcorrenciaParseErro, ResultadoInquisicaoCompleto, SimbolosLog, Tecnica } from '@';
 import { ocorrenciaParseErro } from '@';
+
 import { executarInquisicao as executarExecucao, registrarUltimasMetricas } from './executor.js';
 import { scanRepository } from './scanner.js';
 // Fallback de símbolos para cenários de teste onde o mock de log não inclui `simbolos`.

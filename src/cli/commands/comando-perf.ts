@@ -2,6 +2,7 @@
 import crypto from 'node:crypto';
 import { promises as fs } from 'node:fs';
 import path from 'node:path';
+
 import { ExitCode, sair } from '@cli/helpers/exit-codes.js';
 import { config } from '@core/config/config.js';
 import { formatPct } from '@core/config/format.js';
@@ -9,7 +10,9 @@ import { CliComandoDesempMensagens } from '@core/messages/cli/cli-comando-perf-m
 import { ICONES_DIAGNOSTICO, log, logSistema } from '@core/messages/index.js';
 import { lerEstado, salvarEstado } from '@shared/persistence/persistencia.js';
 import { Command } from 'commander';
+
 import type { MetricaExecucaoLike, SnapshotPerf } from '@';
+
 async function obterCommit(): Promise<string | undefined> {
   try {
     // usar helper seguro

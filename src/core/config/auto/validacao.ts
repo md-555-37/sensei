@@ -5,6 +5,7 @@
  */
 
 import { log } from '@core/messages/index.js';
+
 import type { ValidationResult } from '@';
 
 // Re-exporta o tipo para compatibilidade

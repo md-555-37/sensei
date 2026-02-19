@@ -3,6 +3,7 @@
 // Justificativa: tipos locais usados internamente para parsing de caminhos
 import fsSync from 'node:fs';
 import path from 'node:path';
+
 const _TOP_DIRS = new Set(['analistas', 'arquitetos', 'cli', 'guardian', 'nucleo', 'relatorios', 'tipos', 'auto']);
 const LEGADO_ALIAS_MAPA = new Map<string, string>();
 function toPosix(p: string): string {

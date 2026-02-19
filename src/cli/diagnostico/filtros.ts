@@ -11,8 +11,10 @@
 
 import fs from 'node:fs';
 import path from 'node:path';
+
 import { config } from '@core/config/config.js';
 import { mesclarConfigExcludes } from '@core/config/excludes-padrao.js';
+
 import type { FiltrosProcessados, OpcoesProcessamentoFiltros, TipoLinguagemProjeto } from '@';
 
   /* -------------------------- PROCESSAMENTO DE PADRÕES -------------------------- */

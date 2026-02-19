@@ -11,12 +11,14 @@
 
 import { promises as fs } from 'node:fs';
 import path from 'node:path';
+
 import { ARQUETIPOS } from '@analistas/estrategistas/arquetipos-defs.js';
 // NOTA: parseFileAST ainda não foi implementado no módulo de parsing
 // import { parseFileAST } from '@core/parsing/parser.js';
 import { log } from '@core/messages/index.js';
 import { SENSEI_ARQUIVOS } from '@core/registry/paths.js';
 import { lerEstado, salvarEstado } from '@shared/persistence/persistencia.js';
+
 import type { ArquetipoEstruturaDef, ArquetipoPersonalizado } from '@';
 
 // Nome do arquivo legado (para compatibilidade)

@@ -9,6 +9,7 @@
 
 import { ExcecoesMensagens } from '@core/messages/core/excecoes-messages.js';
 import { log, MENSAGENS_AUTOFIX } from '@core/messages/index.js';
+
 import type { AutoFixOptions, AutoFixResult, FileEntryWithAst } from '@';
 
 // Re-export para compatibilidade
