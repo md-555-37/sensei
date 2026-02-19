@@ -7,19 +7,6 @@
 
 ---
 
-> ⚠️ **Aviso Importante**
->
-> Esta ferramenta está em fase inicial de desenvolvimento e ainda não foi validada. Portanto:
->
-> - **Não substitui** ferramentas oficialmente validadas ou a orientação de profissionais experientes
-> - **Use com cautela** se você já domina o assunto e compreende suas limitações
-> - **Não confie cegamente** se não tem experiência, pois não há garantias de precisão
-> - **Aguarde validação** antes de usar como referência principal
->
-> Recomendamos que aguarde feedback e validação antes de depender desta ferramenta.
-
----
-
 [![CI](https://github.com/md-555/doutor/actions/workflows/ci.yml?badge.svg?branch=main)](https://github.com/md-555/doutor/actions/workflows/ci.yml)
 [![Build](https://github.com/md-555/doutor/actions/workflows/build.yml?badge.svg?branch=main)](https://github.com/md-555/doutor/actions/workflows/build.yml)
 [![Monitor Deps](https://github.com/md-555/doutor/actions/workflows/monitor-deps.yml?badge.svg)](https://github.com/md-555/doutor/actions/workflows/monitor-deps.yml)
